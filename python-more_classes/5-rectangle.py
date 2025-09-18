@@ -62,9 +62,4 @@ class Rectangle:
     def __del__(self):
         """Print a message when a Rectangle instance is deleted."""
         print("Bye rectangle...")
-✅ Behavior with 5-main.py
-bash
-Copier le code
-Area: 8 - Perimeter: 12
-Bye rectangle...
-[NameError] name 'my_rectangle' is not defined
+        
