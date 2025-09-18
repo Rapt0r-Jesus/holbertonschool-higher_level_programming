@@ -7,7 +7,6 @@ instance counting, and customizable print_symbol.
 class Rectangle:
     """Represents a rectangle."""
 
-    # Public class attributes
     number_of_instances = 0
     print_symbol = "#"
 
