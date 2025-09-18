@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Access and update private attribute within the square"""
 class Square:
     """A square is a geometrical form"""
 
