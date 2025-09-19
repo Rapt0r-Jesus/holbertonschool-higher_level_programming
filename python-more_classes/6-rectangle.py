@@ -2,6 +2,7 @@
 """Defines a Rectangle class with width, height, area, perimeter, str, repr, del,
 and a class attribute number_of_instances to count instances."""
 
+
 class Rectangle:
     """Represents a rectangle."""
 
