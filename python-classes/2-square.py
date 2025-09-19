@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Write a class Square that defines a square and add it's area"""
+
+
 class Square:
     """A square is a geometrical form"""
 

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Printing a square"""
+
+
 class Square:
     """A square is a geometrical form"""
 
