@@ -1,0 +1,20 @@
+1. Public instance method: area()
+   - Raises an Exception with the message: "area() is not implemented".
+
+2. Public instance method: integer_validator(name, value)
+   - Validates that 'value' is an integer greater than 0.
+   - Raises a TypeError if 'value' is not an integer.
+   - Raises a ValueError if 'value' is <= 0.
+
+Example usage:
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 10)   # Valid
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+  ...
+TypeError: name must be an integer
+
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+  ...
+ValueError: age must be greater than 0
