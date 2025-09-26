@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+Defines the Verboselist class a subclass of list that provides
+verbose output for list modification methods.
+"""
+
 
 class VerboseList(list):
     """Custom list class that prints notifications on modifications."""
