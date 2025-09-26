@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+defines the Fish, Bird, and FlyingFish classes.
+It demonstrates multiple inheritance and method overriding in Python.
+"""
+
 
 class Fish:
     """Class représentant un poisson."""
