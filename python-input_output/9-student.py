@@ -3,7 +3,7 @@
     Defines a student with first name, last name, and age.
     """
 
-    
+
 class Student:
     """
     Defines a student with first name, last name, and age.
