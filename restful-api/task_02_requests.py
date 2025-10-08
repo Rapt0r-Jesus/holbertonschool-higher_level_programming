@@ -36,13 +36,13 @@ if response.status_code == 200:
     data_posts = []
     for post in posts:
         data_posts.append({
-            "id": post["id"],
-            "title": post["title"],
-            "body": post["body"]
+            'id': post['id'],
+            'title': post['title'],
+            'body': post['body']
         })
 
     with open("posts.csv", mode="w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=["id", "title", "body"])
+        writer = csv.DictWriter(csvfile, fieldnames=['id', 'title', 'body'])
         writer.writeheader()
         writer.writerows(data_posts)
 
