@@ -41,10 +41,10 @@ if response.status_code == 200:
             "body": post["body"]
         })
 
-with open("posts.csv", mode="w", newline="", encoding="utf-8") as csvfile:
-    writer = csv.DictWriter(csvfile, fieldnames=["id", "title", "body"])
-    writer.writeheader()
-    writer.writerows(data_posts)
+    with open("posts.csv", mode="w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=["id", "title", "body"])
+        writer.writeheader()
+        writer.writerows(data_posts)
 
     print("Posts have been successfully saved to posts.csv")
 else:
