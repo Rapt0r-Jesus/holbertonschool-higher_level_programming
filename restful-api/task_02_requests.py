@@ -42,7 +42,8 @@ if response.status_code == 200:
         })
 
     with open("posts.csv", mode="w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=['id', 'title', 'body'])
+        fieldnames=['id', 'title', 'body']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(data_posts)
 
