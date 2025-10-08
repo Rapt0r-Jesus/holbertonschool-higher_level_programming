@@ -14,7 +14,7 @@ response = requests.get(url)
 print(f"Status Code: {response.status_code}")
 
 if response.status_code == 200:
-    posts = answer.json()
+    posts = response.json()
     for post in posts:
         print(post["title"])
     else:
