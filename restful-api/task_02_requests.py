@@ -34,12 +34,12 @@ if response.status_code == 200:
     posts = response.json()
 
     data_posts = []
-    for post in posts
-    data_posts.append({
-        "id": post["id"],
-        "title": post["title"],
-        "body": post["body"]
-    })
+    for post in posts:
+        data_posts.append({
+            "id": post["id"],
+            "title": post["title"],
+            "body": post["body"]
+        })
 
 with open("posts.csv", mode="w", newline="", encoding="utf-8") as csvfile:
     writer = csv.DictWriter(file, fieldnames=["id", "title", "body"])
