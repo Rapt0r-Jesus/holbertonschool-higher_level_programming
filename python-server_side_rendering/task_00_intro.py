@@ -32,18 +32,17 @@ def generate_invitations(template, attendees):
         print("No data provided, no output files generated.")
         return
 
-    for i, attendee in enumerate(attendees, start=1):
-        filled_template = template
+        for i, attendee in enumerate(attendees, start=1):
+            filled_template = template
 
-    for key in ["name", "event_title", "event_date", "event_location"]:
-        value = attendee.get(key, "N/A") or "N/A"
-        filled_template = filled_template.replace(f"{{{key}}}", value)
+        for key in ["name", "event_title", "event_date", "event_location"]:
+            value = attendee.get(key, "N/A") or "N/A"
+            filled_template = filled_template.replace(f"{{{key}}}", value)
 
-    output_filename = f"output_{i}.txt"
+        output_filename = f"output_{i}.txt"
 
-    try:
-        with open(output_filename, "w", encoding="utf-8") as f:
-            f.write(filled_template)
-    except Exception as e:
-        print(f"Error writing to {output_filename}: {e}")
-        continue
+        try:
+            with open(output_filename, "w", encoding="utf-8") as f:
+                f.write(filled_template)
+        except Exception as e:
+            print(f"Error writing to {output_filename}: {e}")
